@@ -13,17 +13,20 @@ class App extends React.Component {
         super();
         this.state = {
             headerText: 'Name It!',
+            headerExpanded: true
         };
     }
 
     handleInputChange = (inputText) => {
-        console.log('Input text -', inputText);
+        this.setState({headerExpanded: false});
     }
 
     render() {
         return (
             <div>
-                <Header headTitle={this.state.headerText} />
+                <Header 
+                    headerExpanded={this.state.headerExpanded}
+                    headTitle={this.state.headerText} />
                 <SearchBox onInputChange={this.handleInputChange} />
             </div>
         );
