@@ -16,7 +16,8 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header headTitle={this.state.headerText} />      
+                <Header headTitle={this.state.headerText} />
+                <SearchBox/>
             </div>
         );
     }
