@@ -5,7 +5,7 @@ const SearchBox = (props) => {
     return (
         <div className='search-container'>
             <input 
-                onChange={(event) => props.onInputChange()}
+                onChange={(event) => props.onInputChange(event.target.value)}
                 placeholder='Type keywords' 
                 className='search-input' />
         </div>

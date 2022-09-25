@@ -16,8 +16,8 @@ class App extends React.Component {
         };
     }
 
-    handleInputChange = () => {
-        alert('I am called!');
+    handleInputChange = (inputText) => {
+        console.log('Input text -', inputText);
     }
 
     render() {
