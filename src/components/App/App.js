@@ -15,10 +15,9 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header />
-                
+                <Header headTitle={this.state.headerText} />      
             </div>
-        )
+        );
     }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css'
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className='head-container'>
             <img 
@@ -11,7 +11,7 @@ const Header = () => {
             />
             <h1 className='head-text'>Name It!</h1>
         </div>
-    )
-}
+    );
+};
 
 export default Header
