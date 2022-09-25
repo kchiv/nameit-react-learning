@@ -9,9 +9,12 @@ class App extends React.Component {
     // Example this.state.headerText = 'new state' does not trigger a re-render
     // To change state we have to use setState
 
-    state = {
-        headerText: 'Name It!',
-    };
+    constructor() {
+        super();
+        this.state = {
+            headerText: 'Name It!',
+        };
+    }
 
     render() {
         return (
