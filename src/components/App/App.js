@@ -18,7 +18,7 @@ class App extends React.Component {
     }
 
     handleInputChange = (inputText) => {
-        this.setState({headerExpanded: false});
+        this.setState({headerExpanded: inputText.length > 0 ? false : true});
     }
 
     render() {
