@@ -13,7 +13,11 @@ const Header = (props) => {
                 }`}
                 alt='headerImage'
             />
-            <h1 className='head-text'>{props.headTitle}</h1>
+            <h1 className={`head-text ${
+                    props.headerExpanded 
+                    ? 'head-text-expanded' 
+                    : 'head-text-contracted'
+                }`}>{props.headTitle}</h1>
         </div>
     );
 };
