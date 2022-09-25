@@ -9,7 +9,7 @@ class App extends React.Component {
     // To change state we have to use setState
 
     state = {
-        headerText: 'This is a cool app!',
+        headerText: 'Name It!',
     };
 
     render() {

@@ -9,7 +9,7 @@ const Header = (props) => {
                 className='head-image'
                 alt='headerImage'
             />
-            <h1 className='head-text'>Name It!</h1>
+            <h1 className='head-text'>{props.headTitle}</h1>
         </div>
     );
 };
