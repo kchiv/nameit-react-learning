@@ -16,11 +16,15 @@ class App extends React.Component {
         };
     }
 
+    handleInputChange = () => {
+        alert('I am called!');
+    }
+
     render() {
         return (
             <div>
                 <Header headTitle={this.state.headerText} />
-                <SearchBox/>
+                <SearchBox onInputChange={this.handleInputChange} />
             </div>
         );
     }
