@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ResultsContainer = () => {
+const ResultsContainer = ({suggestedNames}) => {
     return (
         <div>
-            <p>These are the results!</p>
+            <p>{suggestedNames.length > 0 ? suggestedNames[0] : null}</p>
         </div>
     );
 };

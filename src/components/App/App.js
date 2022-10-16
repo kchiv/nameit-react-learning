@@ -16,12 +16,16 @@ class App extends React.Component {
         super();
         this.state = {
             headerText: 'Name It!',
-            headerExpanded: true
+            headerExpanded: true,
+            suggestedNames: []
         };
     }
 
     handleInputChange = (inputText) => {
-        this.setState({headerExpanded: !inputText});
+        this.setState({
+            headerExpanded: !inputText,
+            suggestedNames: name(inputText),
+        });
     }
 
     render() {
@@ -31,7 +35,7 @@ class App extends React.Component {
                     headerExpanded={this.state.headerExpanded}
                     headTitle={this.state.headerText} />
                 <SearchBox onInputChange={this.handleInputChange} />
-                <ResultsContainer />
+                <ResultsContainer suggestedNames={this.state.suggestedNames} />
             </div>
         );
     }
