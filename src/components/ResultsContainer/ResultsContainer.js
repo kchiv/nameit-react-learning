@@ -3,12 +3,12 @@ import './ResultsContainer.css';
 
 const ResultsContainer = ({suggestedNames}) => {
     const suggestNameJsx = suggestedNames.map((suggestedName) => {
-        return <p>{suggestedName}</p>;
+        return <p key={suggestedName}>{suggestedName}</p>;
     });
 
     return (
         <div className='results-container'>
-            <p>{suggestNameJsx}</p>
+            {suggestNameJsx}
         </div>
     );
 };
