@@ -1,4 +1,5 @@
 import React from 'react';
+import './ResultsContainer.css';
 
 const ResultsContainer = ({suggestedNames}) => {
     const suggestNameJsx = suggestedNames.map((suggestedName) => {
@@ -6,8 +7,8 @@ const ResultsContainer = ({suggestedNames}) => {
     });
 
     return (
-        <div>
-            {suggestNameJsx}
+        <div className='results-container'>
+            <p>{suggestNameJsx}</p>
         </div>
     );
 };
