@@ -4,6 +4,8 @@ import ResultsContainer from '../ResultsContainer/ResultsContainer';
 import SearchBox from '../SearchBox/SearchBox';
 import './App.css';
 
+const name = require('@rstacruz/startup-name-generator');
+
 class App extends React.Component {
 
     // Notes: Changing state directly does not trigger a re-render
