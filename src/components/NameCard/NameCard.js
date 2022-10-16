@@ -1,4 +1,5 @@
 import React from "react";
+import './NameCard.css';
 
 const NameCard = ({ suggestedName }) => {
     return (
