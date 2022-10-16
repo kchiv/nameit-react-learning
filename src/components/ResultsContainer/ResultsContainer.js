@@ -1,9 +1,13 @@
 import React from 'react';
 
 const ResultsContainer = ({suggestedNames}) => {
+    const suggestNameJsx = suggestedNames.map((suggestedName) => {
+        return <p>{suggestedName}</p>;
+    });
+
     return (
         <div>
-            <p>{suggestedNames.length > 0 ? suggestedNames[0] : null}</p>
+            {suggestNameJsx}
         </div>
     );
 };
